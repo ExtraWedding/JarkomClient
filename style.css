@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@400;700&display=swap');
+
+*{
+      font-family: "Lora", serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
+      color : rgb(3, 41, 3);
+}
+
+h3{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card {
+    transition: transform 700ms ease-in-out; /* atau 0.3s */
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+li{
+    list-style-type: none;
+}
+
+.baton2:hover{
+    transition: transform 700ms ease-in-out; /* atau 0.3s */
+    transform: translateY(-20px);
+}
