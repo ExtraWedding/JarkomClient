@@ -1,5 +1,5 @@
 
-const endpoint = 'http://wisnuDandyJarkom/api/buku';
+const endpoint = 'http://jaringankomputer/api/ruang';
 
 
 
@@ -49,16 +49,13 @@ const renderData = (data) => {
         const row = document.createElement("tr");
         row.innerHTML = `
             <td>${index + 1}</td>
-            <td>${item.judul || "N/A"}</td>
-            <td>${item.pengarang || "N/A"}</td>
-            <td>${item.kategori || "N/A"}</td>
-            <td>${item.deskripsi || "N/A"}</td>
-            <td>${item.bahasa || "N/A"}</td>
-            <td>${item.penerbit || "N/A"}</td>
-            <td>${item.tanggal_publikasi || "N/A"}</td>
-            <td>
-                <button onclick="deleteTask(${item.id})" class="btn btn-success">Hapus</button>
-            </td>
+            <td>${item.nama_pinjam || "N/A"}</td>
+            <td>${item.tanggal_pinjam || "N/A"}</td>
+            <td>${item.jam_mulai || "N/A"}</td>
+            <td>${item.jam_selesai || "N/A"}</td>
+            <td>${item.ruang || "N/A"}</td>
+            <td>${item.status || "N/A"}</td>
+            <td>${item.kontak_peminjam || "N/A"}</td>
         `;
         dataList.appendChild(row);
     });

@@ -9,96 +9,140 @@ if (!isset($_SESSION['username'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaringan Komputer</title>
-    <link rel="icon" href="images/sekolah2.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Fakultas Ilmu Administrasi</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
-<body>
 
-  <!-- Navbar Start -->
-          <nav class="navbar navbar-expand-lg navbar-dark sticky-top top-0 rounded-bottom-4" style=" background-color: white;">
-            <div class="container">
-              <a class="navbar-brand ms-0" href="index.html"><img data-aos="zoom-in" width="70px" src="images/sekolah2.png" class="img-fluid" alt=""></a>
-              <h3 data-aos="zoom-in" style="color: rgb(3, 41, 3);">Jaringan Komputer</h3>
-              <button class="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" data-aos="zoom-in" aria-current="page" style="color: rgb(3, 41, 3);" href="index.php"><strong>Home</strong></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-aos="zoom-in" aria-current="page" style="color: rgb(3, 41, 3);" href="tugas.php"><strong>List Buku</strong></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-aos="zoom-in" aria-current="page" style="color: rgb(3, 41, 3);" href="upload.php"><strong>Tambah Buku</strong></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-aos="zoom-in" aria-current="page" style="color: rgb(3, 41, 3);" href="logout.php"><strong>Logout</strong></a>
-                  </li>
-                </ul>
-              </div>
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+
+ 
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">FIA.ID</h1>
+          <span>.</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.php" class="active">Home<br></a></li>
+            <li><a href="tugas.php">Ruang & Gedung</a></li>
+            <li><a href="upload.php">Pengajuan</a></li>
+            <li><a href="logout.php">Logout</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5 justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          ]<h2 class="text-md-start text-center"><span>WELCOME TO </span><span class="accent">FIA.ID</span></h2>
+            <p class="text-md-start text-center">Temukan Kemudahan Dalam Administrasi Peminjaman Ruang, Barang, dan Gedung dengan FIA.ID</p>
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <a href="index.html" class="btn-get-started">Kunjungi Sekarang</a>
             </div>
-          </nav>
-<!-- Navabar end -->
-
-<!-- Home Start -->
- <section class="home" id="home">
-  <div class="container">
-    <div class="row d-flex justify-content-center" data-aos="fade-up"
-    data-aos-duration="3000">
-      <div class="col-lg-5 col-md-6 col-10 text-center text-md-start mt-5" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0%, 0px);">
-      <h1 class="pt-5">
-            <strong>Ayo Tingkatkan Literasi Kamu Dengan Membaca Buku</strong>
-        </h1>
-        <p>
-          Kami Menyediakan Paltform Pengecekan Daftar Buku
-          <br>
-           Perpustakaan <strong> Berbasis Website</strong>
-        </p>
-        <div class="col-12">
-          <button type="submit" class="btn" style="background-color: rgb(3, 135, 23);"><a style="color: black; text-decoration: none;" href="index.php">Kunjungi Sekarang</a></button>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="assets/img/logo.png" class="img-fluid" alt="">
+          </div>
         </div>
       </div>
-      <div class="col-lg-5 col-md-6 col-12 text-center text-md-end">
-        <img class="w-100"  src="images/sekolah2.png" alt="">
+
+      <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="container position-relative">
+          <div class="row gy-4 mt-5">
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-house-check-fill"></i></div>
+                <h4 class="title">Ruangan</h4>
+              </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-building-check"></i></div>
+                <h4 class="title">Lapangan</h4>
+              </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-tools"></i></div>
+                <h4 class="title">Alat</h4>
+              </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-calendar-week"></i></div>
+                <h4 class="title">Traciking</h4>
+              </div>
+            </div><!--End Icon Box -->
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
- </section>
-<!-- Home End -->
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(3, 135, 23)" fill-opacity="1" d="M0,96L34.3,128C68.6,160,137,224,206,229.3C274.3,235,343,181,411,160C480,139,549,149,617,138.7C685.7,128,754,96,823,117.3C891.4,139,960,213,1029,240C1097.1,267,1166,245,1234,202.7C1302.9,160,1371,96,1406,64L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-<!-- Problem -->
-
-<section class="problem mt-0" id="home" style="background-color: rgb(3, 135, 23);">
+    </section><!-- /Hero Section -->
+    
+    <section class="problem" id="home" >
   <div class="container">
     <div class="row d-flex justify-content-center" data-aos="fade-up"
     data-aos-duration="3000">
     <form id="dataForm" onsubmit="return confirm('Apakah Anda yakin ingin menyimpan data ini?')" class="form-container">
     </form>
     <div class="col-12">
-         <div class="bg-light rounded h-100 p-4">
-            <h1 class="mb-4 text-center fw-bold">Tabel Ketersediaan Buku Perpustakaan</h1>
-                <div class="table-responsive">
+         <div class="bg-light rounded h-100 p-4" style="background-color: #008374;">
+            <h1 class="mb-4 text-center fw-bold">Peminjaman Ruang & Alat </h1>
+                <div class="table-responsive" >
                     <table class="table">
                         <thead>
                              <tr>
                                  <th scope="col">No</th>
-                                 <th scope="col">Judul</th>
-                                 <th scope="col">Penulis</th>
-                                 <th scope="col">Genre Buku</th>
-                               <th scope="col">Deskripsi</th>
-                             <th scope="col">Bahasa</th>
-                             <th scope="col">Penerbit</th>
-                             <th scope="col">Tanggal Publikas</th>
-                             <th scope="col">Aksi</th>
+                                 <th scope="col">Nama</th>
+                                 <th scope="col">Tanggal Pinjam</th>
+                                 <th scope="col">Jam Mulai</th>
+                               <th scope="col">Jam Selesai</th>
+                             <th scope="col">Tempat & Alat</th>
+                             <th scope="col">Status</th>
+                             <th scope="col">No Handphone</th>
                          </tr>
                     </thead>
                     <tbody id="dataList"></tbody>
@@ -110,23 +154,35 @@ if (!isset($_SESSION['username'])) {
   </div>
 </section>
 
-<!-- Problem End -->
-<div class="wave-2">
-    <svg viewBox="0 0 1366 231" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 205.59L33.1822 179.025C64.5209 153.615 130.885 102.795 195.406 98.175C259.927 93.555 324.448 136.29 390.812 132.825C455.333 128.205 519.854 77.385 586.219 77.385C650.74 77.385 715.26 128.205 779.781 136.29C846.146 145.53 910.667 110.88 975.188 98.175C1041.55 85.47 1106.07 93.555 1170.59 120.12C1235.11 145.53 1301.48 188.265 1332.82 209.055L1366 231V0H1332.82C1301.48 0 1235.11 0 1170.59 0C1106.07 0 1041.55 0 975.188 0C910.667 0 846.146 0 779.781 0C715.26 0 650.74 0 586.219 0C519.854 0 455.333 0 390.812 0C324.448 0 259.927 0 195.406 0C130.885 0 64.5209 0 33.1822 0H0V205.59Z" fill="rgb(3, 135, 23)"></path>
-    </svg>
- </div>
- <div class="col text-center">
-          <div class="col">
-            <p class="mt-2 mb-5">Copyright <a href="" style="text-decoration: none;"><strong>Jaringan Komputer.co.id</strong></a>  © 2024 <strong>Jarkom</strong> - Melayani Sepenuh Hati.</p>
-          </div>
-        </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="script.js"></script>
+
+  <footer id="footer" class="footer accent-background">
+
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FIA.ID</strong> <span>All Rights Reserved</span></p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
